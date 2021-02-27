@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 
 use Encode qw(is_utf8);
 use CGI qw(:standard);
