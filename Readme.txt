@@ -1,8 +1,8 @@
 =========================================================
-�X�}�[�g�t�H���Ή��ȈՌf����
+スマートフォン対応簡易掲示板
 =========================================================
 
-�y�p�[�~�b�V�����̐ݒ�l�z
+【パーミッションの設定値】
 index.cgi			[755]
 regist.cgi			[755]
 data.csv			[666]
@@ -10,36 +10,35 @@ delete.csv			[666]
 blacklist.csv		[666]
 template.xml		[644]
 
-�y�t�@�C���̐����z
-��index.cgi
-TOP��ʂ��쐬���܂��B
-��regist.cgi
-�Ǘ���ʂł��B
-����ID�A�p�X���[�h�͗����Ƃ��utest�v�ł��B
-��data.csv
-���e�����t�@�C���͂��̃t�@�C����1�s���ǋL����܂��B
-��delete.csv
-�폜�������e�͂��̃t�@�C���ɕۑ�����܂��B
-��template.xml
-RSS�t�@�C���̃e���v���[�g�ł��B
+【ファイルの説明】
+●index.cgi
+TOP画面を作成します。
+●regist.cgi
+管理画面です。
+初期ID、パスワードは両方とも「test」です。
+●data.csv
+投稿したファイルはこのファイルに1行ずつ追記されます。
+●delete.csv
+削除した投稿はこのファイルに保存されます。
+●template.xml
+RSSファイルのテンプレートです。
 
-�y�T�|�[�g�z
-�s��𔭌������ꍇ�́A�z�[���y�[�W�̌f���ɏ������ނ��A���L���Ƀ��[���𑗂��Ă��������B
-�Ȃ�ׂ��Ώ��������Ǝv���܂��B
-����ȋ@�\��ǉ����Ăق����Ȃǂ̈ӌ����ǂ��ǂ����񂹂��������B
-�ǂ�����낵�����肢�������܂��B
+【サポート】
+不具合を発見した場合は、ホームページの掲示板に書き込むか、下記宛にメールを送ってください。
+なるべく対処したいと思います。
+こんな機能を追加してほしいなどの意見もどしどしお寄せください。
+どうぞよろしくお願いいたします。
 
-�y��ҁz
-���䑏
-e-mail : mukai@tsukuba42195.lolipop.jp
-home page : http://tsukuba42195.lolipop.jp/
+【作者】
+向井聡
+home page : http://s0323861.moo.jp/
 
-�y�X�V�����z
-2011/05/22 Version 1.00 ����
-2011/08/08 Version 1.01 1.01��
-2011/08/23 Version 1.02 1.02��
-2011/08/29 Version 1.03 1.03��
-2013/10/17 Version 1.04 1.04��
-2013/11/11 Version 1.05 1.05��
-2014/03/17 Version 1.06 1.06��
-2015/10/24 Version 2.00 1.07��
+【更新履歴】
+2011/05/22 Version 1.00 初版
+2011/08/08 Version 1.01 1.01版
+2011/08/23 Version 1.02 1.02版
+2011/08/29 Version 1.03 1.03版
+2013/10/17 Version 1.04 1.04版
+2013/11/11 Version 1.05 1.05版
+2014/03/17 Version 1.06 1.06版
+2015/10/24 Version 2.00 1.07版
