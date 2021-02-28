@@ -43,21 +43,21 @@ print <<"EOF";
           <form class="form-horizontal" data-toggle="validator" method="post" action="./regist.cgi">
             <fieldset>
               <div class="form-group">
-                <label for="inputName" class="col-lg-2 control-label">ユーザー名</label>
+                <label for="inputName" class="col-lg-2 control-label">ID</label>
                 <div class="col-lg-10">
                   <input type="text" class="form-control" id="inputName" placeholder="Name" name="user" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPass" class="col-lg-2 control-label">パスワード</label>
+                <label for="inputPass" class="col-lg-2 control-label">Password</label>
                 <div class="col-lg-10">
                   <input type="password" class="form-control" id="inputPass" placeholder="Password" name="pass" required>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
-                  <button type="submit" class="btn btn-primary">ログイン</button>
-                  <button type="reset" class="btn btn-default">キャンセル</button>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <button type="reset" class="btn btn-default">Cancel</button>
                 </div>
               </div>
             </fieldset>
@@ -88,10 +88,10 @@ sub delete {
 	&head;
 
 	print <<"EOF";
-	<h3>指定の書き込みを削除しました。</h3>
+	<h3>The post was deleted successfully.</h3>
 
 	<p>
-	<a href="regist.cgi?user=$user&pass=$pass">一覧に戻る</a><br>
+	<a href="regist.cgi?user=$user&pass=$pass">Back</a><br>
 	</p>
 EOF
 
@@ -181,7 +181,7 @@ EOL
 		<input type="hidden" name="pass" value=$pass>
 		<input type="hidden" name="id" value="delete">
 		<input type="hidden" name="delno" value="$no">
-		<button type="submit" class="btn btn-danger pull-right" name="Submit"><span class="glyphicon glyphicon-trash"></span> 削除</button>
+		<button type="submit" class="btn btn-danger pull-right" name="Submit"><span class="glyphicon glyphicon-trash"></span> Delete</button>
 		</form>
 		$url $rhost</p>
 		<hr>
@@ -252,7 +252,7 @@ sub head {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>フリー掲示板 管理画面</title>
+  <title>Simple BBS Admin</title>
 
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
   <style type="text/css">
@@ -316,7 +316,7 @@ sub head {
       </div>
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
-          <li><a href="./">掲示板</a></li>
+          <li><a href="./">Top</a></li>
         </ul>
       </div>
     </div>
@@ -331,8 +331,8 @@ sub head {
             <div class="col-md-8">
 
                 <h1 class="page-header">
-                    掲示板
-                    <small>投稿の削除を行います。</small>
+                    Simple BBS
+                    <small>You can delete the post here.</small>
                 </h1>
 
 
@@ -357,7 +357,7 @@ sub footer {
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
                                 <li><a href="./">Top</a></li>
-                                <li><a href="regist.cgi">管理画面</a></li>
+                                <li><a href="regist.cgi">Admin</a></li>
                             </ul>
                         </div>
                         <!-- /.col-lg-6 -->
@@ -367,11 +367,11 @@ sub footer {
 
                 <!-- Blog Categories Well -->
                 <div class="well">
-                    <h4>注意事項</h4>
+                    <h4>Note</h4>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li>初期ユーザー名とパスワードは「test」です。</li>
+                                <li>The initial ID and password is "test".</li>
                             </ul>
                         </div>
                         <!-- /.col-lg-6 -->
@@ -390,7 +390,7 @@ sub footer {
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Akira Mukai 2015</p>
+                    <p>Developed by <a href="http://s0323861.moo.jp/">Akira Mukai</a> 2021</p>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
