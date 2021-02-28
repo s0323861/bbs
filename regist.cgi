@@ -307,7 +307,7 @@ sub head {
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a href="/" class="navbar-brand">Top</a>
+        <a href="./" class="navbar-brand">Top</a>
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -316,7 +316,7 @@ sub head {
       </div>
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
-          <li><a href="./">Top</a></li>
+          <li><a href="./">BBS</a></li>
         </ul>
       </div>
     </div>
